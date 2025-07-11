@@ -1,0 +1,139 @@
+/* font-size line-height letter-spacing text-indent
+margin padding gap (pentru Flex/Grid) top,
+right,
+bottom,
+left (poziționare) width,
+height min-width,
+max-width min-height,
+max-height     -> in REM
+ */
+
+.login-container,
+.register-container {
+  background: var(--light);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+body {
+  background-image: url('/Assets/fundal.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.logo i {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.logo h1 {
+  margin-top: 10px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.logo p {
+  margin-top: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  transition: all 0.3s;
+}
+
+.input-group input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.input-group i {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  color: #777;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 25px;
+}
+
+.remember-me input {
+  margin-right: 10px;
+  accent-color: var(--primary);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #3e8e41;
+  transform: translateY(-2px);
+}
+
+.register-link,
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a,
+.login-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+
+  .login-container,
+  .register-container {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+}

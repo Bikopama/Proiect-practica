@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Food Mood - Checkout.">
+    <meta name="author" content="Cristian Nicolaica">
+  <title>Food Mood - Checkout</title>
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="/css/checkout.css" />
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+  <header>
+    <h1>Food Mood</h1>
+  </header>
+
+  <main class="checkout-container">
+    <h2>Coșul tău</h2>
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>Produs</th>
+          <th>Preț</th>
+          <th>Cantitate</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <div class="total-container">
+      <strong>Total:</strong> <span id="grandTotal">0.00 lei</span>
+    </div>
+
+    <button id="checkoutBtn">Trimite Comanda</button>
+  </main>
+
+  <script src="/javascript/checkout.js"></script>
+</body>

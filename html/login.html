@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Mood">
+    <meta name="author" content="Nicolaica Cristian-Alexandru">
+    <title>Food Mood - Login</title>
+    <link rel="icon" type="image/png" href="/Assets/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/form.css">
+    <script src="/Javascript/login.js" type="module"></script>
+</head>
+
+<body>
+    <main class="login-container">
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            <h1>Food Mood</h1>
+        </div>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Introdu adresa de email">
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Parolă</label>
+                <input type="password" id="password" required placeholder="Introdu parola">
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Ține-mă minte</label>
+            </div>
+
+            <button type="submit">Autentificare</button>
+
+            <div class="register-link">
+                Nu ai cont? <a href="/index.html">Înregistrează-te</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
